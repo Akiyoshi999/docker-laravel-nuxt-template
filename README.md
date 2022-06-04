@@ -52,19 +52,25 @@ This repository is a template for easily creating a project that separates the f
    },
    ```
 
-3. Create a Laravel project under the laravel directory
+3. .env file create
+
+   ```
+   cp .env.example .env
+   ```
+
+4. Create a Laravel project under the laravel directory
 
    ```
    docker-compose run app composer create-project laravel/laravel:^8.0 .
    ```
 
-4. Docker start up
+5. Docker start up
 
    ```
    docker-compose up -d --build
    ```
 
-5. Clear cache of Laravel config file
+6. Clear cache of Laravel config file
 
    ```
    $ docker-compose exec app ash
@@ -75,7 +81,7 @@ This repository is a template for easily creating a project that separates the f
    $ exit
    ```
 
-6. Start Nuxt
+7. Start Nuxt
    If you want to start the container when Docker starts,change the entry point of Docker file of front_app
 
    ```
@@ -86,9 +92,7 @@ This repository is a template for easily creating a project that separates the f
 
 Since Laravel is running To start Nuxt, execute the following command.
 
-    
     docker-compose exec front_app yarn dev
-    
 
 ### Communication settings between Nuxt and Laravel
 

@@ -1,4 +1,4 @@
 .env
 nuxt
-laravel
+laravel/**/
 docker/nginx/logs/
