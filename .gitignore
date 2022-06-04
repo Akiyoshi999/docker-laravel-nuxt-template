@@ -1,3 +1,5 @@
 .env
 nuxt
 docker/nginx/logs/
+laravel/*
+!/laravel/.gitignore
