@@ -84,12 +84,11 @@ This repository is a template for easily creating a project that separates the f
 
 ## Usage
 
-Since Laravel is running
-To start Nuxt, execute the following command.
+Since Laravel is running To start Nuxt, execute the following command.
 
-    ```
+    
     docker-compose exec front_app yarn dev
-    ```
+    
 
 ### Communication settings between Nuxt and Laravel
 
