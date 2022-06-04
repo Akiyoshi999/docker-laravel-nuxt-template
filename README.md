@@ -71,12 +71,8 @@ This repository is a template for easily creating a project that separates the f
 1. Clear cache of Laravel config file
 
    ```
-   $ docker-compose exec app ash
-   $ php artisan -V   // バージョンが表示されればOK
-   $ php artisan config:cache
-   $ php artisan migrate
-   $ chmod -R a+rw storage/ bootstrap/cache
-   $ exit
+   docker-compose exec app php artisan config:cache
+   docker-compose exec app php artisan migrate
    ```
 
 1. Start Nuxt
