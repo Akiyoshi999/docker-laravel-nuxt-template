@@ -10,6 +10,10 @@ This repository is a template for easily creating a project that separates the f
 
 ## Setup
 
+1. Run setup.sh Then modify the .env file accordingly.
+   ```
+   sh setup.sh
+   ```
 1. Create a Nuxt project
    Change options as appropriate for your project
 
@@ -39,9 +43,9 @@ This repository is a template for easily creating a project that separates the f
    of issues. Because of the V8 engin
    ```
 
-2. Modified package.json for container startup
+1. Modified package.json for container startup
 
-   ```nuxt/package.json
+   ```diff_javascript:nuxt/package.json
    "scripts": {
    -   "dev": "nuxt",
    +   "dev": "HOST=0.0.0.0 PORT=3000 nuxt",
@@ -52,25 +56,19 @@ This repository is a template for easily creating a project that separates the f
    },
    ```
 
-3. .env file create
-
-   ```
-   cp .env.example .env
-   ```
-
-4. Create a Laravel project under the laravel directory
+1. Create a Laravel project under the laravel directory
 
    ```
    docker-compose run app composer create-project laravel/laravel:^8.0 .
    ```
 
-5. Docker start up
+1. Docker start up
 
    ```
    docker-compose up -d --build
    ```
 
-6. Clear cache of Laravel config file
+1. Clear cache of Laravel config file
 
    ```
    $ docker-compose exec app ash
@@ -81,7 +79,7 @@ This repository is a template for easily creating a project that separates the f
    $ exit
    ```
 
-7. Start Nuxt
+1. Start Nuxt
    If you want to start the container when Docker starts,change the entry point of Docker file of front_app
 
    ```
