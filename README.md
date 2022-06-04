@@ -118,5 +118,5 @@ You can set the communication settings between Nuxt and Laravel by making the fo
 
 ## reference
 
-[nuxt/axios](https://axios.nuxtjs.org/options/)
-[【備忘録】ゼロから Docker で Laravel+Nuxt TypeScript+MySQL の環境構築をしてトップページを表示するまで](https://qiita.com/kaba_farm/items/8d8b8faab808a55d3232)
+- [nuxt/axios](https://axios.nuxtjs.org/options/)
+- [【備忘録】ゼロから Docker で Laravel+Nuxt TypeScript+MySQL の環境構築をしてトップページを表示するまで](https://qiita.com/kaba_farm/items/8d8b8faab808a55d3232)
